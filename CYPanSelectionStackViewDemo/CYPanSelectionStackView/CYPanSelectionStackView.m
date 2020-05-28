@@ -76,6 +76,7 @@
         for (UIButton *btn in self.arrangedSubviews) {
             if (!btn.highlighted) { continue; }
             [btn sendActionsForControlEvents:UIControlEventTouchUpInside];
+            btn.highlighted = NO;
         }
     }
 }
