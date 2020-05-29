@@ -77,6 +77,7 @@
             if (!btn.highlighted) { continue; }
             [btn sendActionsForControlEvents:UIControlEventTouchUpInside];
             btn.highlighted = NO;
+            break;
         }
     }
 }
